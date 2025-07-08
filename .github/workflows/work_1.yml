@@ -1,8 +1,19 @@
 name: Work 1 Dorx
-on: [push]
+
+on:
+  push:
+    branches:
+      - test_1
+
 jobs:
-  build: 
+  build:
     runs-on: ubuntu-latest
-    steps: 
-    - name: Print Something
-      run: echo "Hola Pitaya!"
+    steps:
+      - name: Impresión 1
+        run: echo "Impresión 1"
+        
+      - name: Impresión 2
+        run: echo "Impresión 2"
+
+      - name: Impresión 3
+        run: echo "Impresión 3"
